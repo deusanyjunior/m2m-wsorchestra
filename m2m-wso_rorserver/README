@@ -1,3 +1,33 @@
+<m2m-wso> 
+
+Getting Started with this Ruby on Rails server
+
+Before uploading the files, you need some commands at your RoR server:
+$ rails new m2m-wso
+$ cd m2m-wso
+
+The next commands are used to create models and controllers, but I don't think
+they will be necessary before uploading the server. 
+
+$ rails generate controller welcome index
+$ rails generate model Note username:string note:integer velocity:integer
+$ rails generate controller notes index show new create edit update destroy
+
+Upload the files from this folder to your server. Depending on your server
+database configuration you may need to edit the file "/config/database.yml".
+The next command commits the database structure to production evironment.  
+
+$ rake db:migrate RAILS_ENV="production"
+
+Now you can restart your server.
+
+$ touch tmp/restart.txt
+
+And have fun!
+
+</m2m-wso>
+
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
