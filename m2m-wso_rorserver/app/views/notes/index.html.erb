@@ -1,0 +1,9 @@
+<h1>Notes#index</h1>
+<p>Find me in app/views/notes/index.html.erb</p>
+
+Notes:<br /><br />
+
+<% @notes.each do |r| %>
+	[<%= r.id %>] [<%= r.created_at %>] <%= r.username %> <%= r.note %> <%= r.velocity %><br /> 
+<% end %>
+

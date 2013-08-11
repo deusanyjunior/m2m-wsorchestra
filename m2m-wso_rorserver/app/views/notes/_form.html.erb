@@ -1,0 +1,30 @@
+<%= form_for(@note) do |f| %>
+	<% if @note.errors.any? %>
+	<div id="explicacao_erro">
+		<h2>Devido a estes <%= pluralize(@note.errors.count, "error") %> 
+			esta nova nota não pode ser salva:</h2>
+		
+		<ul>
+			<% @note.errors.full_messages.each do |msg| %>
+				<li><%= msg %></li>
+			<% end %>
+		</ul>
+	</div>
+	<% end %>
+	
+	<div class="campo_form">
+		<%= f.label :username %><br />
+		<%= f.text_field :username %>
+	</div>
+	<div class="campo_form">
+		<%= f.label :note %><br />
+		<%= f.text_field :note %>
+	</div>
+	<div class="campo_form">
+		<%= f.label :velocity %><br />
+		<%= f.text_field :velocity %>
+	</div>
+	<div class="botao_enviar">
+		<%= f.submit %>
+	</div>
+<% end %>
