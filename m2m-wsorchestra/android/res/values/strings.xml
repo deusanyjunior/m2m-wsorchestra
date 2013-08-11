@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">M2M-Orchestra</string>
+    <string name="action_settings">Settings</string>
+    <string name="insert_username">Insert your username:</string>
+    <string name="hint_input_username">Use 2 to 16 chars without spaces</string>
+    <string name="button_start_playing">Start playing!</string>
+    <string name="username">Username</string>
+    <string name="tittle_WSOrchestra_Score">WSOrchestra Score</string>
+    <string name="score">username: n=0 v=0</string>
+
+    <string-array name="spinner_presset">
+        <item>Preset 1</item>
+        <item>Preset 2</item>
+        <item>Preset 3</item>
+        <item>Preset 4</item>
+    </string-array>
+        <string name="tittle_velocity">Velocity:</string>
+        <string name="tittle_octave">Octave:</string>
+        <string name="button_previous_octave">&lt;&lt;</string>
+        <string name="button_next_octave">>></string>
+        <string name="tittle_keyboard">Keyboard:</string>
+        <string name="toggle_ws_score_reader">WS Score Reader</string>
+        <string name="toggle_ws_synchronized">WS Synchronized</string>
+        <string name="tittle_ws_score_reader_toggle">Score Reader</string>
+        <string name="tittle_ws_synchronized_toggle">WS Synchronized</string>
+</resources>
